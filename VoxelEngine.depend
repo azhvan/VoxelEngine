@@ -1,0 +1,98 @@
+# depslib dependency file v1.0
+1604136640 source:/home/artem/OpenGL_Project/VoxelEngine/src/Graphics/Shader.cpp
+	"Shader.h"
+	<exception>
+	<fstream>
+	<iostream>
+	<sstream>
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+
+1604094734 /home/artem/OpenGL_Project/VoxelEngine/src/Graphics/Shader.h
+	<string>
+
+1604843069 source:/home/artem/OpenGL_Project/VoxelEngine/src/Graphics/Texture.cpp
+	"Texture.h"
+	<glad/glad.h>
+
+1604842635 /home/artem/OpenGL_Project/VoxelEngine/src/Graphics/Texture.h
+	<string>
+
+1611914051 source:/home/artem/OpenGL_Project/VoxelEngine/src/loaders/png_loading.cpp
+	"png_loading.h"
+	<iostream>
+	<glad/glad.h>
+	"png.h"
+	"../Graphics/Texture.h"
+
+1604843007 /home/artem/OpenGL_Project/VoxelEngine/src/loaders/png_loading.h
+	<string>
+	"../Graphics/Texture.h"
+
+1610804106 source:/home/artem/OpenGL_Project/VoxelEngine/src/main.cpp
+	<iostream>
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	"Graphics/Shader.h"
+	"Graphics/Texture.h"
+	"loaders/png_loading.h"
+	"Window/Window.h"
+	"Window/Events.h"
+	"loaders/png_loading.h"
+
+1604095614 /home/artem/OpenGL_Project/VoxelEngine/src/Window/Window.h
+
+1604583505 /home/artem/OpenGL_Project/VoxelEngine/src/Window/Events.h
+	"Window.h"
+
+1604583505 source:/home/artem/OpenGL_Project/VoxelEngine/src/Window/Events.cpp
+	"Events.h"
+	<GLFW/glfw3.h>
+	<string.h>
+
+1604095614 source:/home/artem/OpenGL_Project/VoxelEngine/src/Window/Window.cpp
+	<iostream>
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	"Window.h"
+
+1611927002 /home/artem/OpenGL_Project/VoxelEngine/src/OpenGL_Files/include/glad/glad.h
+	<KHR/khrplatform.h>
+
+1611927002 /home/artem/OpenGL_Project/VoxelEngine/src/OpenGL_Files/include/KHR/khrplatform.h
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+
+1579473811 /home/artem/OpenGL_Project/VoxelEngine/src/OpenGL_Files/include/GLFW/glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<vulkan/vulkan.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl32.h>
+	<GLES2/gl2ext.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<GL/glcorearb.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1611927002 source:/home/artem/OpenGL_Project/VoxelEngine/src/OpenGL_Files/src/glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<winapifamily.h>
+	<dlfcn.h>
+

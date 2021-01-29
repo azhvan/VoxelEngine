@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="VoxelEngine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="build/bin/Debug/VoxelEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/obj/Debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="src/OpenGL_Files/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lglfw3 -ldl -lX11 -lpthread -lm -lXrandr -lXi" />
+					<Add option="-lpng" />
+					<Add library="src/OpenGL_Files/lib/libglfw3.a" />
+					<Add directory="src/OpenGL_Files/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="build/bin/Release/VoxelEngine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="build/obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="src/OpenGL_Files/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lglfw3 -ldl -lX11 -lpthread -lm -lXrandr -lXi" />
+			<Add option="-lpng" />
+			<Add library="src/OpenGL_Files/lib/libglfw3.a" />
+			<Add directory="src/OpenGL_Files/lib" />
+		</Linker>
+		<Unit filename="res/main.glslf" />
+		<Unit filename="res/main.glslv" />
+		<Unit filename="src/Graphics/Shader.cpp" />
+		<Unit filename="src/Graphics/Shader.h" />
+		<Unit filename="src/Graphics/Texture.cpp" />
+		<Unit filename="src/Graphics/Texture.h" />
+		<Unit filename="src/OpenGL_Files/src/glad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Window/Events.cpp" />
+		<Unit filename="src/Window/Events.h" />
+		<Unit filename="src/Window/Window.cpp" />
+		<Unit filename="src/Window/Window.h" />
+		<Unit filename="src/loaders/png_loading.cpp" />
+		<Unit filename="src/loaders/png_loading.h" />
+		<Unit filename="src/main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
