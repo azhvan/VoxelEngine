@@ -14,6 +14,7 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="src/OpenGL_Files/include" />
+					<Add directory="src/Window" />
 				</Compiler>
 				<Linker>
 					<Add option="-lglfw3 -ldl -lX11 -lpthread -lm -lXrandr -lXi" />
@@ -29,6 +30,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="src/Window" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -41,7 +43,7 @@
 		</Compiler>
 		<Linker>
 			<Add option="-lglfw3 -ldl -lX11 -lpthread -lm -lXrandr -lXi" />
-			<Add option="-lpng" />
+			<Add option="-lpng -lGL" />
 			<Add library="src/OpenGL_Files/lib/libglfw3.a" />
 			<Add directory="src/OpenGL_Files/lib" />
 		</Linker>
@@ -54,6 +56,8 @@
 		<Unit filename="src/OpenGL_Files/src/glad.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="src/Window/Camera.cpp" />
+		<Unit filename="src/Window/Camera.h" />
 		<Unit filename="src/Window/Events.cpp" />
 		<Unit filename="src/Window/Events.h" />
 		<Unit filename="src/Window/Window.cpp" />

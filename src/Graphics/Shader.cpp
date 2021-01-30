@@ -7,8 +7,9 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-Shader::Shader(unsigned int id) : id(id) {
-}
+#include <glm/gtc/type_ptr.hpp>
+
+Shader::Shader(unsigned int id) : id(id) {}
 
 Shader::~Shader() {
   glDeleteProgram(id);
@@ -16,6 +17,11 @@ Shader::~Shader() {
 
 void Shader::use() {
   glUseProgram(id);
+}
+
+void Shader::uniformMatrix(std::string name, glm::mat4 matrix){
+  GLuint transformLoc = glGetUniformLocation(id, name.c_str());
+  glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(matrix));
 }
 
 Shader* load_shader(std::string vertexFile, std::string fragmentFile) {
@@ -80,10 +86,10 @@ Shader* load_shader(std::string vertexFile, std::string fragmentFile) {
   if (!success) {
     glGetProgramInfoLog(id, 512, nullptr, infoLog);
     std::cerr << "SHADER::PROGRAM: linking failed\n" << infoLog << std::endl;
-    
+
     glDeleteShader(vertex);
     glDeleteShader(fragment);
-    
+
     return nullptr;
   }
   glDeleteShader(vertex);

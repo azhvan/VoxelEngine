@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1604136640 source:/home/artem/OpenGL_Project/VoxelEngine/src/Graphics/Shader.cpp
+1612010080 source:/home/artem/OpenGL_Project/VoxelEngine/src/Graphics/Shader.cpp
 	"Shader.h"
 	<exception>
 	<fstream>
@@ -7,9 +7,11 @@
 	<sstream>
 	<glad/glad.h>
 	<GLFW/glfw3.h>
+	<glm/gtc/type_ptr.hpp>
 
-1604094734 /home/artem/OpenGL_Project/VoxelEngine/src/Graphics/Shader.h
+1612010080 /home/artem/OpenGL_Project/VoxelEngine/src/Graphics/Shader.h
 	<string>
+	<glm/glm.hpp>
 
 1604843069 source:/home/artem/OpenGL_Project/VoxelEngine/src/Graphics/Texture.cpp
 	"Texture.h"
@@ -29,28 +31,30 @@
 	<string>
 	"../Graphics/Texture.h"
 
-1610804106 source:/home/artem/OpenGL_Project/VoxelEngine/src/main.cpp
+1612014818 source:/home/artem/OpenGL_Project/VoxelEngine/src/main.cpp
 	<iostream>
 	<glad/glad.h>
 	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/ext.hpp>
 	"Graphics/Shader.h"
 	"Graphics/Texture.h"
 	"loaders/png_loading.h"
 	"Window/Window.h"
 	"Window/Events.h"
-	"loaders/png_loading.h"
+	"Window/Camera.h"
 
-1604095614 /home/artem/OpenGL_Project/VoxelEngine/src/Window/Window.h
+1612013641 /home/artem/OpenGL_Project/VoxelEngine/src/Window/Window.h
 
-1604583505 /home/artem/OpenGL_Project/VoxelEngine/src/Window/Events.h
+1612014693 /home/artem/OpenGL_Project/VoxelEngine/src/Window/Events.h
 	"Window.h"
 
-1604583505 source:/home/artem/OpenGL_Project/VoxelEngine/src/Window/Events.cpp
+1612014774 source:/home/artem/OpenGL_Project/VoxelEngine/src/Window/Events.cpp
 	"Events.h"
 	<GLFW/glfw3.h>
 	<string.h>
 
-1604095614 source:/home/artem/OpenGL_Project/VoxelEngine/src/Window/Window.cpp
+1612013641 source:/home/artem/OpenGL_Project/VoxelEngine/src/Window/Window.cpp
 	<iostream>
 	<glad/glad.h>
 	<GLFW/glfw3.h>
@@ -95,4 +99,12 @@
 	<windows.h>
 	<winapifamily.h>
 	<dlfcn.h>
+
+1612013453 source:/home/artem/OpenGL_Project/VoxelEngine/src/Window/Camera.cpp
+	"Camera.h"
+	"Window.h"
+	<glm/ext.hpp>
+
+1612013097 /home/artem/OpenGL_Project/VoxelEngine/src/Window/Camera.h
+	<glm/glm.hpp>
 
