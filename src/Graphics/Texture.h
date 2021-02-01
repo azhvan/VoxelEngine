@@ -2,9 +2,7 @@
 #ifndef GRACHICS_TEXTURE_H
 #define GRACHICS_TEXTURE_H
 
-#include <string>
-
-
+class string;
 class Texture{
 public:
   unsigned int id;
@@ -14,5 +12,5 @@ public:
   ~Texture();
   void bind();
 };
-extern Texture* load_texture(std::string filename);
+extern Texture* load_texture(const std::string& filename);
 #endif // !GRACHICS_TEXTURE_H

@@ -1,24 +1,22 @@
 #pragma once
 #ifndef WINDOW_EVENTS_H
 #define WINDOW_EVENTS_H
-
-#include "Window.h"
 typedef unsigned int uint;
 
 class Events {
 public:
-  static bool* _keys;
-  static uint* _frames;
-  static uint _current;
+  static bool* keys;
+  static uint* frames;
+  static uint current;
   static double deltaX;
   static double deltaY;
   static double x;
   static double y;
-  static bool _cursor_locked;
-  static bool _cursor_started;
+  static bool cursor_locked;
+  static bool cursor_started;
 
   static int initialize();
-  static void pullEvents();
+  static void pollEvents();
 
   static bool pressed(int keycode);
   static bool jpressed(int keycode);

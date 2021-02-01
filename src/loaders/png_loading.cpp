@@ -1,8 +1,9 @@
 #pragma warning(disable: 4996)
-#include "png_loading.h"
 #include <iostream>
+#include <string>
 #include <glad/glad.h>
-#include "png.h"
+#include <png.h>
+#include "png_loading.h"
 #include "../Graphics/Texture.h"
 
 int _png_load(const char* file, int* width, int* height) {
@@ -105,7 +106,7 @@ int _png_load(const char* file, int* width, int* height) {
   return texture;
 }
 
-Texture* load_texture(std::string filename) {
+Texture* load_texture(const std::string& filename) {
   int width = 0, height = 0;
   GLuint texture = 0;
   texture = _png_load(filename.c_str(), &width, &height);

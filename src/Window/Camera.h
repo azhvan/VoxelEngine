@@ -1,7 +1,7 @@
 #ifndef WINDOW_CAMERA_H
 #define WINDOW_CAMERA_H
-#include <glm/glm.hpp>
 
+//class vec3;
 class Camera {
   void updateVectors();
 public:

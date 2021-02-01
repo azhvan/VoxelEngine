@@ -1,6 +1,7 @@
+#include <glm/glm.hpp>
+#include <glm/ext.hpp>
 #include "Camera.h"
 #include "Window.h"
-#include <glm/ext.hpp>
 
 Camera::Camera(glm::vec3 position, float fov): position(position), fov(fov),  rotation(1.0f) {
   updateVectors();

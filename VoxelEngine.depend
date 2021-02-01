@@ -108,3 +108,111 @@
 1612013097 /home/artem/OpenGL_Project/VoxelEngine/src/Window/Camera.h
 	<glm/glm.hpp>
 
+1612195927 source:/windows/work/GitHub/VoxelEngine/src/Graphics/Texture.cpp
+	<glad/glad.h>
+	<string>
+	"Texture.h"
+
+1612195962 /windows/work/GitHub/VoxelEngine/src/Graphics/Texture.h
+
+1612015644 /windows/work/GitHub/VoxelEngine/src/OpenGL_Files/include/glad/glad.h
+	<KHR/khrplatform.h>
+
+1612015644 /windows/work/GitHub/VoxelEngine/src/OpenGL_Files/include/KHR/khrplatform.h
+	<stdint.h>
+	<inttypes.h>
+	<stdint.h>
+
+1612195876 source:/windows/work/GitHub/VoxelEngine/src/loaders/png_loading.cpp
+	<iostream>
+	<string>
+	<glad/glad.h>
+	<png.h>
+	"png_loading.h"
+	"../Graphics/Texture.h"
+
+1612195678 /windows/work/GitHub/VoxelEngine/src/loaders/png_loading.h
+
+1612194719 source:/windows/work/GitHub/VoxelEngine/src/main.cpp
+	"Window/Window.h"
+
+1612015644 /windows/work/GitHub/VoxelEngine/src/OpenGL_Files/include/GLFW/glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<vulkan/vulkan.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl32.h>
+	<GLES2/gl2ext.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<GL/glcorearb.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1612196109 /windows/work/GitHub/VoxelEngine/src/Graphics/Shader.h
+	<string>
+	<glm/glm.hpp>
+
+1612196196 /windows/work/GitHub/VoxelEngine/src/Window/Window.h
+	<string>
+
+1612195502 /windows/work/GitHub/VoxelEngine/src/Window/Events.h
+
+1612195747 /windows/work/GitHub/VoxelEngine/src/Window/Camera.h
+
+1612015644 source:/windows/work/GitHub/VoxelEngine/src/OpenGL_Files/src/glad.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<glad/glad.h>
+	<windows.h>
+	<winapifamily.h>
+	<dlfcn.h>
+
+1612195726 source:/windows/work/GitHub/VoxelEngine/src/Window/Camera.cpp
+	<glm/glm.hpp>
+	<glm/ext.hpp>
+	"Camera.h"
+	"Window.h"
+
+1612195527 source:/windows/work/GitHub/VoxelEngine/src/Window/Events.cpp
+	"Events.h"
+	<string.h>
+	<GLFW/glfw3.h>
+	"Window.h"
+
+1612196141 source:/windows/work/GitHub/VoxelEngine/src/Window/Window.cpp
+	<iostream>
+	<array>
+	<string>
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/ext.hpp>
+	"../Graphics/Shader.h"
+	"../Graphics/Texture.h"
+	"../loaders/png_loading.h"
+	"Window.h"
+	"Events.h"
+	"Camera.h"
+
+1612196108 source:/windows/work/GitHub/VoxelEngine/src/Graphics/Shader.cpp
+	<iostream>
+	<exception>
+	<fstream>
+	<sstream>
+	<glad/glad.h>
+	<GLFW/glfw3.h>
+	<glm/gtc/type_ptr.hpp>
+	"Shader.h"
+

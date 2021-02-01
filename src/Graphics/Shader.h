@@ -10,7 +10,7 @@ public:
   ~Shader();
 
   void use();
-  void uniformMatrix(std::string name, glm::mat4 matrix);
+  void uniformMatrix(const std::string& name, const glm::mat4& matrix);
 };
-extern Shader* load_shader(std::string vertexFile, std::string fragmentFile);
+extern Shader* load_shader(const std::string& vertexFile, const std::string& fragmentFile);
 #endif // !GRACHICS_SHADER_H

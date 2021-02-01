@@ -1,5 +1,7 @@
-#include "Texture.h"
 #include <glad/glad.h>
+#include <string>
+#include "Texture.h"
+
 Texture::Texture(unsigned int id, int width, int height) : id(id), width(width), height(height) {
 }
 

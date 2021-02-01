@@ -1,13 +1,14 @@
-#include "Shader.h"
-
+#include <iostream>
 #include <exception>
 #include <fstream>
-#include <iostream>
 #include <sstream>
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 #include <glm/gtc/type_ptr.hpp>
+
+#include "Shader.h"
 
 Shader::Shader(unsigned int id) : id(id) {}
 
@@ -19,12 +20,12 @@ void Shader::use() {
   glUseProgram(id);
 }
 
-void Shader::uniformMatrix(std::string name, glm::mat4 matrix){
+void Shader::uniformMatrix(const std::string& name, const glm::mat4& matrix){
   GLuint transformLoc = glGetUniformLocation(id, name.c_str());
   glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(matrix));
 }
 
-Shader* load_shader(std::string vertexFile, std::string fragmentFile) {
+Shader* load_shader(const std::string& vertexFile, const std::string& fragmentFile) {
   std::string vertexCode;
   std::string fragmentCode;
   std::ifstream vShaderFile;
